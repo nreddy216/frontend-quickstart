@@ -1,0 +1,49 @@
+{
+  "name": "es6-webpack4-boilerplate",
+  "version": "1.0.0",
+  "description": "Basic boilerplate for a front-end web app using Webpack4, ES6, and SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nidhireddy",
+  "license": "ISC",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode=development --env.development NODE_ENV=dev",
+    "build": "webpack --mode=production --env.production NODE_ENV=prod",
+    "deploy": "npm run build && make deploy",
+    "lint": "prettier --write src/**/*.js"
+  },
+  "author": "nreddy216",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "7.1.5",
+    "@babel/core": "7.1.5",
+    "@babel/polyfill": "7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "autoprefixer": "9.3.1",
+    "babel-loader": "8.0.4",
+    "clean-webpack-plugin": "1.0.0",
+    "copy-webpack-plugin": "4.6.0",
+    "css-loader": "1.0.1",
+    "file-loader": "2.0.0",
+    "googleapis": "27.0.0",
+    "html-webpack-plugin": "3.2.0",
+    "image-webpack-loader": "4.5.0",
+    "jsonlint-mod": "1.7.2",
+    "mini-css-extract-plugin": "0.4.4",
+    "node-sass": "4.10.0",
+    "optimize-css-assets-webpack-plugin": "5.0.1",
+    "postcss-loader": "3.0.0",
+    "prettier": "1.15.2",
+    "sass-loader": "7.1.0",
+    "style-loader": "0.23.1",
+    "terser-webpack-plugin": "1.1.0",
+    "webpack": "4.25.1",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "3.1.10",
+    "webpack-obfuscator": "0.18.0"
+  },
+  "dependencies": {}
+}
